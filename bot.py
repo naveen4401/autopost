@@ -20,7 +20,7 @@ client = TelegramClient('session_name', api_id, api_hash)
 
 # --- Automated Task Settings ---
 messages_to_send = ["Hi"]
-interval_seconds = 300
+interval_seconds = 900
 
 # --- Control Variables ---
 is_running = False
@@ -309,4 +309,5 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         logger.info("Bot shut down by user.")
     except Exception as e:
+
         logger.critical(f"A fatal error occurred: {e}")
